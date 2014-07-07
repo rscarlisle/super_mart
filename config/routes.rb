@@ -7,6 +7,7 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 Depot::Application.routes.draw do
+  root "users#index"
   get 'admin' => 'admin#index'
   
   controller :sessions do
